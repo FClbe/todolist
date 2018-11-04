@@ -103,7 +103,7 @@ import java.util.ArrayList;
              edit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                  @Override
                  public void onFocusChange(View v, boolean hasFocus) {
-                     if(arr.size() > 0){
+                     if(arr.size() > 0 && position < arr.size() - 1){
                          arr.set(position, edit.getText().toString());
                      }
                  }
