@@ -8,8 +8,9 @@ import org.litepal.crud.DataSupport;
 
 public class Todo extends DataSupport {
     private int id;
+    private String title;
     private String content;
-
+    private int priority;
     public void setContent(String content) {
         this.content = content;
     }
@@ -26,5 +27,21 @@ public class Todo extends DataSupport {
     public int getId() {
 
         return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getPriority() {
+        return priority;
+    }
+
+    public void setPriority(int priority) {
+        this.priority = priority;
     }
 }
